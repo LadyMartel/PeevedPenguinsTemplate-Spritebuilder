@@ -80,6 +80,11 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>PeevedPenguinsAssets</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Sprites</key>
 		<dict/>
 		<key>ccbResources</key>
@@ -166,8 +171,8 @@
 		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>Version: 1.1.0
-GitHub: d058712eaf
+	<string>Version: 1.1.0-rc
+GitHub: 12746019b4
 </string>
 </dict>
 </plist>
