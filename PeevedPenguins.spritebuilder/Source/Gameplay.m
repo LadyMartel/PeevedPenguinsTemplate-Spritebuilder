@@ -27,6 +27,11 @@
   CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
   [_levelNode addChild:level];
   
+  
+  // nothing shall collide with our invisible nodes
+  _pullbackNode.physicsBody.collisionMask = @[];
+  _mouseJointNode.physicsBody.collisionMask = @[];
+  
   // visualize physics bodies & joints
   _physicsNode.debugDraw = TRUE;
 }
@@ -123,10 +128,7 @@
   self.position = ccp(0, 0);
   CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
   [_contentNode runAction:follow];
-  
-  // nothing shall collide with our invisible nodes
-  _pullbackNode.physicsBody.collisionMask = @[];
-  _mouseJointNode.physicsBody.collisionMask = @[];
+
 }
 
 - (void)retry {
