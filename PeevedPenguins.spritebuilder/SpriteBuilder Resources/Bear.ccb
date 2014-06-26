@@ -163,7 +163,7 @@
 									<key>name</key>
 									<string>rotation</string>
 									<key>time</key>
-									<real>1.0333333015441895</real>
+									<real>0.93333333730697632</real>
 									<key>type</key>
 									<integer>2</integer>
 									<key>value</key>
@@ -287,6 +287,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
