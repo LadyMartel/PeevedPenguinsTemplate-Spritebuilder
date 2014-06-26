@@ -794,8 +794,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -867,7 +865,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>replay</string>
+							<string>retry</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -1122,6 +1120,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
