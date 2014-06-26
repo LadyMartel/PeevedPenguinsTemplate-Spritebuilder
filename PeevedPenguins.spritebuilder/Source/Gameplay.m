@@ -28,8 +28,6 @@
   
   // visualize physics bodies & joints
   _physicsNode.debugDraw = TRUE;
-  _mouseJointNode = [[CCNode alloc]init];
-  _mouseJoint = [[CCNode alloc]init];
 }
 
 // called on every touch in this scene
