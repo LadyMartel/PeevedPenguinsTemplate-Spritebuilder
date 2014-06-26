@@ -14,6 +14,7 @@
   CCNode *_levelNode;
   CCNode *_catapultArm;
   CCNode *_pullbackNode;
+  
   CCNode *_mouseJointNode;
   CCPhysicsJoint *_mouseJoint;
 }
@@ -27,6 +28,8 @@
   
   // visualize physics bodies & joints
   _physicsNode.debugDraw = TRUE;
+  _mouseJointNode = [[CCNode alloc]init];
+  _mouseJoint = [[CCNode alloc]init];
 }
 
 // called on every touch in this scene
