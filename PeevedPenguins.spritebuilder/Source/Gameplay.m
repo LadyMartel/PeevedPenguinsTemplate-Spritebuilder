@@ -111,7 +111,7 @@
 //  [penguin.physicsBody applyForce:force];
   
   self.position = ccp(0, 0);
-  CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
+  CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
   [_contentNode runAction:follow];
 
 }
