@@ -24,6 +24,8 @@
 - (void)didLoadFromCCB {
   
   self.userInteractionEnabled = TRUE;
+  _physicsNode.collisionDelegate = self;
+  
   CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
   [_levelNode addChild:level];
   
@@ -96,6 +98,12 @@
 -(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
   [self releaseCatapult];
 }
+
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
+{
+  CCLOG(@"Something collided with a seal!");
+}
+
 
 -(void) touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event {
   [self releaseCatapult];
