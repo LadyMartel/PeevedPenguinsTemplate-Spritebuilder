@@ -43,7 +43,6 @@
   if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
   {
     
-    // create a penguin from the ccb-file
     _currentPenguin = [CCBReader load:@"Penguin"];
     // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
     CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
@@ -86,7 +85,7 @@
 {
   // when touches end, meaning the user releases their finger, release the catapult
   [self releaseCatapult];
-  [self launchPenguin];
+//  [self launchPenguin];
   
 }
 
@@ -103,12 +102,12 @@
 //  penguin.position = ccpAdd(_catapultArm.position, ccp(16, 50));
 //  
 //  // add the penguin to the physicsNode of this scene (because it has physics enabled)
-  [_physicsNode addChild:_currentPenguin];
+//  [_physicsNode addChild:_currentPenguin];
 //
-  // manually create & apply a force to launch the penguin
-  CGPoint launchDirection = ccp(1, 0);
-  CGPoint force = ccpMult(launchDirection, 8000);
-  [_currentPenguin.physicsBody applyForce:force];
+//  // manually create & apply a force to launch the penguin
+//  CGPoint launchDirection = ccp(1, 0);
+//  CGPoint force = ccpMult(launchDirection, 8000);
+//  [_currentPenguin.physicsBody applyForce:force];
   
   self.position = ccp(0, 0);
   CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
