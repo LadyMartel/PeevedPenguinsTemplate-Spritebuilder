@@ -233,10 +233,10 @@
 				<key>value</key>
 				<array>
 					<array>
-						<real>0.0</real>
-						<real>0.0</real>
-						<real>0.0</real>
-						<real>255</real>
+						<real>1</real>
+						<real>0.25149115920066833</real>
+						<real>0.2648291289806366</real>
+						<real>0.28999999165534973</real>
 					</array>
 					<array>
 						<real>0.0</real>
